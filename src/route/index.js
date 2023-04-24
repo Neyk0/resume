@@ -26,43 +26,39 @@ router.get('/summary', function (req, res) {
 
     page: {
       title: 'Resume',
-    },
-
-    header: {
-      name: {
-        firstname: 'Dmytro',
+      header: {
+        name: 'Dmytro',
         lastname: 'Ivanov',
-      },
-      position: 'Junior Fullstack JS Developer',
-      salary: '600$ в місяць ',
-      address: 'Ukrain,Kyiv',
-    },
-
-    main: {
-      summary: {
-        title: 'summary',
-        text: 'Open-mided for new technologies, with 1 years of experience in development. Whenever I start to work on a new project I lern the damain and try to understand tht idea of the project . Good team player , every colleague is a friend to me . ',
+        position: 'Junior Fullstack JS Developer',
+        salary: '6005 $',
+        address: 'Ukraine, Kyiv',
       },
 
-      otherexperience: {
-        title: 'other.experience',
-        text: ' Pet project for prasing sport betting data from different platforms ( odds) and sport sttatistics (tournament position , goals , etc) , analyzing by simple mathematics models and preparing probablity for such events like : money lile / first win/dram/second win , totals ets.',
-      },
-    },
-
-    footer: {
-      social: {
-        email: {
-          text: 'dmytro@mail.com',
-          href: 'mailto:dmytro@mail.com',
+      main: {
+        summary: {
+          title: 'summary',
+          text: 'Open-mided for new technologies, with 1 years of experience in development. Whenever I start to work on a new project I lern the damain and try to understand tht idea of the project . Good team player , every colleague is a friend to me . ',
         },
-        phone: {
-          text: '+380670000123',
-          href: 'tel:+380670000123',
+
+        otherexperience: {
+          title: 'other.experience',
+          text: ' Pet project for prasing sport betting data from different platforms ( odds) and sport sttatistics (tournament position , goals , etc) , analyzing by simple mathematics models and preparing probablity for such events like : money lile / first win/dram/second win , totals ets.',
         },
-        linkedin: {
-          text: 'LinkedIn',
-          href: 'https://www.linkedin.com/in/dmytro-test',
+      },
+
+      footer: {
+        social: {
+          email: {
+            text: 'dmytro@mail.com',
+          },
+          phone: {
+            text: '+380670000123',
+            href: 'tel:+380670000123',
+          },
+          linkedin: {
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/dmytro-test',
+          },
         },
       },
     },
@@ -81,42 +77,38 @@ router.get('/skills', function (req, res) {
 
     page: {
       title: 'Resume',
-    },
-
-    header: {
-      name: {
-        firstname: 'Dmytro',
+      header: {
+        name: 'Dmytro',
         lastname: 'Ivanov',
+        position: 'Junior Fullstack JS Developer',
+        salary: '6005 $',
+        address: 'Ukraine, Kyiv',
       },
-      position: 'Junior Fullstack JS Developer',
-      salary: '600$ в місяць ',
-      address: 'Ukraine,Kyiv',
-    },
 
-    main: {
-      skills: [
-        'HTML ',
-        'Handlebards',
-        'VS Code',
-        ' Git',
-        'Terminal',
-        'NPM',
-      ],
-    },
+      main: {
+        skills: [
+          'HTML ',
+          'Handlebards',
+          'VS Code',
+          ' Git',
+          'Terminal',
+          'NPM',
+        ],
+      },
 
-    footer: {
-      social: {
-        email: {
-          text: 'dmytro@mail.com',
-          href: 'mailto:dmytro@mail.com',
-        },
-        phone: {
-          text: '+380670000123',
-          href: 'tel:+380670000123',
-        },
-        linkedin: {
-          text: 'LinkedIn',
-          href: 'https://www.linkedin.com/in/dmytro-test',
+      footer: {
+        social: {
+          email: {
+            text: 'dmytro@mail.com',
+          },
+          phone: {
+            text: '+380670000123',
+            href: 'tel:+380670000123',
+          },
+          linkedin: {
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/dmytro-test',
+          },
         },
       },
     },
@@ -133,41 +125,34 @@ router.get('/education', function (req, res) {
 
     page: {
       title: 'Resume',
-    },
-
-    header: {
-      name: {
-        firstname: 'Dmytro',
+      header: {
+        name: 'Dmytro',
         lastname: 'Ivanov',
+        position: 'Junior Fullstack JS Developer',
+        salary: '6005 $',
+        address: 'Ukraine, Kyiv',
       },
-      position: 'Junior Fullstack JS Developer',
-      salary: '600$ в місяць ',
-      address: 'Ukraine,Kyiv',
-    },
-
-    main: {
-      education: ['Поділля', 'КМРФ', 'ДУІТ'],
-    },
-
-    footer: {
-      social: {
-        email: {
-          text: 'dmytro@mail.com',
-          href: 'mailto:dmytro@mail.com',
-        },
-        phone: {
-          text: '+380670000123',
-          href: 'tel:+380670000123',
-        },
-        linkedin: {
-          text: 'LinkedIn',
-          href: 'https://www.linkedin.com/in/dmytro-test',
+      main: {
+        education: ['Noginna', 'KMPO'],
+      },
+      footer: {
+        social: {
+          email: {
+            text: 'dmytro@mail.com',
+          },
+          phone: {
+            text: '+380670000123',
+            href: 'tel:+380670000123',
+          },
+          linkedin: {
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/dmytro-test',
+          },
         },
       },
     },
   })
 })
-
 // Підключаємо роутер до бек-енду
 
 module.exports = router
