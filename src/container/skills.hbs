@@ -10,13 +10,24 @@
             {{> title data="All skills" }}
         <ul>
            {{#each skills}}
-                <li> {{this}}</li>
+                <li> 
+                   {{name}}
+                   {{#if point includeZero=true}} - {{point}} {{/if}}
+                   {{#if isTop}} (Top) {{/if}}
+                   {{#unless point includeZero=true}} (не вивчаємо) {{/unless}} 
+                   {{#unless point}} 
+                        {{#if point includeZero=true}}
+                        (зараз вивчаємо)
+                        {{/if}}
+                   {{/unless}}
+                </li>
             {{/each}}
             </ul>
         </section>
     </main>
     {{/with}}
 </div>
+
 
 {{!-- 
     Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs

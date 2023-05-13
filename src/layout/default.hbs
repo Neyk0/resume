@@ -36,12 +36,7 @@
     </header>
     {{/with}}
 
-
-    <nav>
-        {{> link text="Skills" href="/skills" line=true }}
-        {{> link text="Summary" href="/summary" line=true }}
-        {{> link text="Education" href="/education" line=true}}
-    </nav>
+   {{> nav}}
 
     {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
     {{{body}}}
@@ -65,7 +60,7 @@
        <br>
        <div>
         <address>
-            {{.../header/address}}
+            {{../header/address}}
         </address>
        </div>
  </footer>
